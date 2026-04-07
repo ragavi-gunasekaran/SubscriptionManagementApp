@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public class SubscriberDAOImplementation implements SubscriberDAO {
 
-    private List<Subscriber> subscribers = new ArrayList<>();
+    public List<Subscriber> subscribers = new ArrayList<>();
 
     @Override
     public void save(Subscriber subscriber) {
