@@ -20,6 +20,8 @@ public class SubscriberDAOImplementation implements SubscriberDAO {
 
     @Override
     public Optional<Subscriber> findById(int id) {
-        return Optional.empty();
+        return subscribers.stream()
+                .filter(s -> s.getId() == id)
+                .findFirst();
     }
 }
